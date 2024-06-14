@@ -1,0 +1,128 @@
+.item {
+    width: 350px;
+}
+
+.item p {
+    margin: 6px 0px;
+}
+
+.itemPrices {
+    display: flex;
+    gap: 20px;
+}
+
+.itemPriceNew {
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.itemPriceOld {
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+
+/* responsive  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .item {
+        width: 250px;
+    }
+
+    .item img {
+        width: 270px;
+    }
+    
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .item {
+        width: 180px;
+        font-size: 10px;
+    }
+
+    .item img {
+        width: 180px;
+    }
+
+    .itemPriceNew {
+        font-size: 10px;
+    }
+
+    .itemPriceOld {
+        font-size: 10px;
+    }
+
+
+    
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    
+    .item {
+        width: 50px;
+        font-size: 3.46667vw;
+        padding: 0;
+        margin: 0;
+        }
+
+    .item img {
+        width: 190px;
+    }
+
+    .item p {
+        width: 180px;
+    }
+
+    .itemPriceNew {
+        font-size:4.26667vw;
+    }
+
+    .itemPriceOld {
+        font-size: 4.26667vw;
+    }
+
+    
+
+  }
+
+
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .item {
+        width: 50px;
+        font-size: 3.46667vw;
+        padding: 0;
+        margin: 0;
+        }
+
+    .item img {
+        width: 130px;
+    }
+
+    .item p {
+        width: 100px;
+    }
+
+    .itemPriceNew {
+        font-size:4.26667vw;
+    }
+
+    .itemPriceOld {
+        font-size: 4.26667vw;
+    }
+
+    
+  }

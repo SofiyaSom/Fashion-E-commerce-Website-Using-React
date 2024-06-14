@@ -1,0 +1,421 @@
+.newLetter {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0px 140px;
+  background-color: black;
+  gap: 30px;
+}
+
+.newLetter img {
+  width: 100px;
+}
+
+.newLetter h1 {
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.newLetter p {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.newLetter div {
+  display: flex;
+  flex-direction: column; /* Changed to column to fit the error message */
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 730px;
+  height: 100px; /* Adjusted height to fit the error message */
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+  position: relative;
+}
+
+.newLetter input {
+  width: 500px;
+  margin-left: 20px;
+  margin-right: 50px;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.newLetter .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.newLetter .best {
+  height: 80px;
+}
+
+
+
+.subscription .submitEmail {
+position: absolute;
+top: 0;
+right: 0;
+height: 76px;
+width: 150px;
+border: none;
+border-radius: 60px;
+outline: none;
+margin: 1px;
+padding: 0 20px;
+cursor: pointer;
+background: #ad3b3b;
+color: #FFFFFF;
+transition: width .35s ease-in-out;
+  background: .35s ease-in-out;
+}
+
+
+.subscription.done .submitEmail {
+width: calc(100% - 2px);
+background: #ad3b3b;
+}
+
+.beforeSubmit {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.subscription .submitEmail .beforeSubmit,
+.subscription .submitEmail .afterSubmit {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+text-align: center;
+justify-content: center;
+line-height: 38px;
+transition: visibility .35s ease-in-out,
+  opacity .35s ease-in-out;
+}
+
+.subscription.done .submitEmail .beforeSubmit,
+.subscription:not(.done) .submitEmail .afterSubmit {
+visibility: hidden;
+opacity: 0;
+}
+
+.afterSubmit {
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+
+.subscription .submitEmail .afterSubmit {
+transition-delay: .35s;
+}
+
+.subscription:not(.done) .submitEmail .beforeSubmit,
+.subscription.done .submitEmail .afterSubmit {
+visibility: visible;
+opacity: 1;
+}
+
+
+/* responsive  */
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .newLetter {
+    height: 80vh;
+  }
+  
+
+  .newLetter img {
+    width: 70px;
+  }
+  
+  .newLetter h1 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .newLetter p {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  
+  .newLetter div {
+    display: flex;
+    flex-direction: column; /* Changed to column to fit the error message */
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 600px;
+    height: 25px; /* Adjusted height to fit the error message */
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+    position: relative;
+  }
+  
+  .newLetter input {
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 50px;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+  }
+  
+  .newLetter .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .newLetter .best {
+    height: 55px;
+  }
+  
+  .subscription .submitEmail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #ad3b3b;
+  color: #FFFFFF;
+  transition: width .35s ease-in-out;
+    background: .35s ease-in-out;
+  }
+  
+  
+  .subscription.done .submitEmail {
+  width: calc(100% - 2px);
+  background: #ad3b3b;
+  }
+  
+  .beforeSubmit {
+    padding-top: 6px;
+    font-size: 15px;
+  }
+  
+  .subscription .submitEmail .beforeSubmit,
+  .subscription .submitEmail .afterSubmit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  line-height: 38px;
+  transition: visibility .35s ease-in-out,
+    opacity .35s ease-in-out;
+  }
+  
+  .subscription.done .submitEmail .beforeSubmit,
+  .subscription:not(.done) .submitEmail .afterSubmit {
+  visibility: hidden;
+  opacity: 0;
+  }
+  
+  .afterSubmit {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .subscription .submitEmail .afterSubmit {
+  transition-delay: .35s;
+  }
+  
+  .subscription:not(.done) .submitEmail .beforeSubmit,
+  .subscription.done .submitEmail .afterSubmit {
+  visibility: visible;
+  opacity: 1;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .newLetter img {
+      width: 70px;
+    }
+
+    .newLetter {
+      height: 50vh;
+    }
+  
+    .newLetter h1 {
+      font-size: 20px;
+    }
+
+    .newLetter p {
+      font-size: 13px;
+    }
+
+
+    .subscription .submitEmail {
+      position: absolute;
+      height: 50px;
+      width: 130px;
+      border-radius: 60px;
+      }
+      
+      
+      .beforeSubmit {
+        padding-top: 6px;
+        font-size: 15px;
+      }
+      
+      .subscription .submitEmail .beforeSubmit,
+      .subscription .submitEmail .afterSubmit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+
+      .subscription input {
+        width: 300px;
+        margin-left: -50px;
+        padding: 0;
+      }
+      .newLetter .best {
+        height: 55px;
+        width: 500px;
+      }
+      
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .newLetter img {
+    width: 50px;
+  }
+
+  .newLetter {
+    height: 50vh;
+  }
+
+  .newLetter h1 {
+    font-size: 15px;
+  }
+
+  .newLetter p {
+    font-size: 9px;
+  }
+
+  .subscription .submitEmail {
+    position: absolute;
+    height: 35px;
+    width: 90px;
+    border-radius: 60px;
+    }
+    
+    
+    .beforeSubmit {
+      padding-top: 1px;
+      font-size: 10px;
+    }
+    
+    .subscription .submitEmail .beforeSubmit,
+    .subscription .submitEmail .afterSubmit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    }
+
+    .subscription input {
+      width: 300px;
+      margin-left: -20px;
+      padding: 0;
+      font-size: 10px;
+    }
+    .newLetter .best {
+      height: 39px;
+      width: 400px;
+    }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .newLetter img {
+    width: 50px;
+  }
+
+  .newLetter {
+    height: 50vh;
+  }
+
+  .newLetter h1 {
+    width: 300px;
+    font-size: 15px;
+    padding-left: 30px;
+  }
+
+  .newLetter p {
+    font-size: 10px;
+    width: 300px;
+    padding-left: 40px;
+  }
+
+  .subscription .submitEmail {
+    position: absolute;
+    height: 35px;
+    width: 90px;
+    border-radius: 60px;
+    }
+    
+    
+    .beforeSubmit {
+      padding-top: 1px;
+      font-size: 10px;
+    }
+    
+    .subscription .submitEmail .beforeSubmit,
+    .subscription .submitEmail .afterSubmit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    }
+
+    .subscription input {
+      width: 200px;
+      padding: 0;
+      font-size: 10px;
+    }
+    .newLetter .best {
+      height: 39px;
+      width: 250px;
+    }
+  
+}
+
+

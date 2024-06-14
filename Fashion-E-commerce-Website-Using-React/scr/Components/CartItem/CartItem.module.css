@@ -1,0 +1,342 @@
+.cartItems {
+    margin: 100px 170px;
+    height: 100vh;
+}
+
+.cartItems hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+
+.cartItemsFormatMain,
+.cartItemsFormat {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartItemsFormat {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.CartIconProductIcon {
+    height: 62px;
+}
+
+.CartIconRemoveIcon{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.cartItemsQuantity {
+    width: 64px;
+    height: 50px;
+    border: 2px solid #e2e2e2;
+    background: #fff;
+}
+
+.cartItemsDown {
+    display: flex;
+    margin: 100px 0px;
+}
+
+.cartItemsTotal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.cartItemsTotals {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.cartItemsTotal button {
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cartItemsPromocode {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.cartItemsPromocode p {
+    color: #454545;
+}
+
+.cartItemsPromobox {
+    width: 504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: whitesmoke;
+}
+
+.cartItemsPromobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 330px;
+    height: 50px;
+}
+
+.cartItemsPromobox button {
+    width: 150px;
+    height: 58px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE  */
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .cartItems {
+        margin: 20px;
+    }
+
+    .cartItemsPromobox {
+        width: 500px;
+        margin-top: 15px;
+        /* padding-left: 5px; */
+        height: 58px;
+        background: whitesmoke;
+    }
+    
+    
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .cartItems {
+        margin: 50px 70px;
+        height: 100vh;
+        /* width: 100%; */
+        padding-top: 50px;
+    }
+  
+    .cartItemsFormatMain,
+    .cartItemsFormat {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0px;
+        color: #454545;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .cartItems hr {
+        height: 3px;
+        background: #e2e2e2;
+        border: 0;
+        width: 100%;
+    }
+
+    .cartItemsPromocode {
+        flex: 1;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 300px;
+    }
+    
+    .cartItemsDown {
+        display: flex;
+        margin: 100px 0px;
+        gap: 10px;
+    }
+
+    .cartItemsTotal {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        gap: 40px;
+    }
+
+    .cartItemsPromobox input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        width: 130px;
+        height: 30px;
+    }
+
+    .cartItemsPromobox {
+        width: 300px;
+        margin-top: 15px;
+        padding-left: 20px;
+        height: 58px;
+        background: whitesmoke;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .cartItems {
+        margin: 20px 10px;
+        height: 100vh;
+        /* width: 100%; */
+        padding-top: 50px;
+    }
+  
+    .cartItemsFormatMain,
+    .cartItemsFormat {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0px;
+        color: #454545;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .cartItems hr {
+        height: 3px;
+        background: #e2e2e2;
+        border: 0;
+        width: 100%;
+    }
+
+    .cartItemsPromocode {
+        flex: 1;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        padding-bottom: 100px;
+    }
+    
+    .cartItemsDown {
+        display: block;
+        margin: 100px 10px;
+        gap: 20px;
+    }
+
+    .cartItemsTotal {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        gap: 40px;
+    }
+
+    .cartItemsPromobox input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        width: 130px;
+        height: 30px;
+    }
+
+    .cartItemsPromobox {
+        width: 300px;
+        margin-top: 15px;
+        padding-left: 20px;
+        height: 58px;
+        background: whitesmoke;
+    }
+
+    
+    
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .cartItems {
+        margin: 20px 10px;
+        height: 100vh;
+        /* width: 100%; */
+        padding-top: 50px;
+    }
+  
+    .cartItemsFormatMain,
+    .cartItemsFormat {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0px;
+        color: #454545;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .cartItems hr {
+        height: 3px;
+        background: #e2e2e2;
+        border: 0;
+        width: 100%;
+    }
+
+    .cartItemsPromocode {
+        flex: 1;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        padding-bottom: 100px;
+    }
+    
+    .cartItemsDown {
+        display: block;
+        margin: 100px 10px;
+        gap: 20px;
+    }
+
+    .cartItemsTotal {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        gap: 40px;
+    }
+
+    .cartItemsPromobox input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        width: 130px;
+        height: 30px;
+    }
+
+    .cartItemsPromobox {
+        width: 300px;
+        margin-top: 15px;
+        padding-left: 20px;
+        height: 58px;
+        background: whitesmoke;
+    }
+    
+  }
